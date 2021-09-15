@@ -1,18 +1,28 @@
 {
   "name": "mini-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tailwind Udemy Course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "postcss tailwind.css -o dist/css/styles.css",
+    "watch": "postcss tailwind.css -o dist/css/styles.css --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "tailwind",
+    "css",
+    "styles",
+    "frontend"
+  ],
+  "author": "Matthijs Boet",
+  "license": "MIT",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.3.4",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.15"
+  },
+  "devDependencies": {
+    "tailwindcss-debug-screens": "^2.1.0"
   }
 }
